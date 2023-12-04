@@ -1,0 +1,40 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend/src/app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mydb   
+    env_file:
+      - ./backend/src/app/.env
+    networks:
+      - mynetwork   
+      
+  frontend:
+    build:
+      context: ./frontend/messageBoard
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend  
+    networks:
+      - mynetwork             
+
+  mydb:
+    image: "postgres:11"
+    ports:
+      - "5432:5432"
+    environment:
+      TZ: "Europe/Stockholm"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "chaintraced"
+    networks:
+      - mynetwork
+    # volumes:
+    #   - ./init.sql:/docker-entrypoint-initdb.d/init.sql       
+
+networks:
+  mynetwork:
