@@ -5,7 +5,7 @@ Welcome to the Message Board project! This application is my assignment (<a href
 ## application features
 allows users to:
  * Authentication: very simple authentication has been provided (not secure)
- * create an message
+ * create a message
  * view messages posted by others
  * reply to messages
  * manage their own messages (deleting them). 
@@ -25,6 +25,8 @@ please in the project root run `docker-compose up` command: this will run both b
 please wait until the whole aplication started, then create a user and start enjoying the application by going to `localhost:3000` address
 
 2.without `docker-compose`:
+- database setup:
+please comment the services related to the backend and frontend of `docker-compose.yml` file and run `docker-compose up`, otherwise it need a postgres DB hosted on `localhost`
 - Backend Setup:
 please go to the backend dir and run the below commands
 ```sh

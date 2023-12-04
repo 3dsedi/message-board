@@ -10,7 +10,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/sedi/message-board/db"
-	"github.com/sedi/vmessage-board/model"
+	"github.com/sedi/message-board/model"
 	"github.com/stretchr/testify/assert"
 )
 
