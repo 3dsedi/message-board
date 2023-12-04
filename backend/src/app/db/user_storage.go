@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/sedi/messageBoard/model"
+	"github.com/sedi/message-board/model"
 )
 
 type UserStorage interface {

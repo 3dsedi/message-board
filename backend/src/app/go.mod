@@ -1,4 +1,4 @@
-module github.com/sedi/messageBoard
+module github.com/sedi/message-board
 
 go 1.21.4
 

@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/sedi/messageBoard/model"
+	"github.com/sedi/message-board/model"
 )
 
 type MockMessageStorage struct{}

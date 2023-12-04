@@ -21,8 +21,8 @@ although I did my best, my test cases (in both front and back) were not sufficie
 
 ## project setup and run:
 1.by `docker-compose` help
-please in the project root run `docker-compose up -d` command: this will run both backend and frontend.
-please create a user and start enjoying the application
+please in the project root run `docker-compose up` command: this will run both backend and frontend.
+please wait until the whole aplication started, then create a user and start enjoying the application by going to `localhost:3000` address
 
 2.without `docker-compose`:
 - Backend Setup:

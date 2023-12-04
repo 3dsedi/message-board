@@ -7,8 +7,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/sedi/messageBoard/db"
-	"github.com/sedi/messageBoard/model"
+	"github.com/sedi/message-board/db"
+	"github.com/sedi/message-board/model"
 )
 
 type UserAPI struct {

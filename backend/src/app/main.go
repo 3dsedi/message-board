@@ -5,8 +5,8 @@ import (
 	"log"
 
 	"github.com/joho/godotenv"
-	"github.com/sedi/messageBoard/api"
-	"github.com/sedi/messageBoard/db"
+	"github.com/sedi/message-board/api"
+	"github.com/sedi/message-board/db"
 )
 
 func main() {

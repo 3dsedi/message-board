@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
-	"github.com/sedi/messageBoard/db"
+	"github.com/sedi/message-board/db"
 )
 
 type APIServer struct {

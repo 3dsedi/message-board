@@ -6,7 +6,7 @@ import (
 	"log"
 
 	_ "github.com/lib/pq"
-	"github.com/sedi/messageBoard/model"
+	"github.com/sedi/message-board/model"
 )
 
 type MessageStorage interface {

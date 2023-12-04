@@ -7,7 +7,7 @@ import (
 	"sync"
 	"net/http"
 	"github.com/joho/godotenv"
-	"github.com/sedi/messageBoard/model"
+	"github.com/sedi/message-board/model"
 )
 
 var (
@@ -36,8 +36,6 @@ func CreateDBconnection() (*sql.DB, error) {
 		envFile["DB_PASSWORD"],
 		envFile["DB_NAME"],
 	)
-	log.Printf("coneeeeenStr: %s", connStr)
-
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		log.Fatal("error opening database connection: %w, please check docker daemon/postgre engine is running", err)
